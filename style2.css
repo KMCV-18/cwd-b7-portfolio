@@ -1,0 +1,87 @@
+/* Section-drawings*/
+.section-drawings {
+    background: #355145;
+    color:rgb(235, 237, 223);
+    font-size: 18px;
+}
+
+div.gallery {
+    border: 10px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 3px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+  * {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+    width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section-paintings {
+    background: #121212;
+    color:rgb(221, 237, 145);
+    font-size: 18px;
+}
+
+.section-stories {
+    background: #726666;
+    color:rgb(17, 16, 18);
+    font-size: 18px;
+}
+
+/* Buttons for pages */
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: rgb(226, 216, 216);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 2px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
